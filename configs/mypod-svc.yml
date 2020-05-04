@@ -3,8 +3,9 @@ kind: Service
 metadata:
   name: podsvc
 spec:
+  sessionAffinity: ClientIP
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: testapp
+    app: mypod

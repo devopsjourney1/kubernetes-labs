@@ -1,11 +1,12 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
- name: mypod
+  name: mypod
 spec:
   replicas: 3
   selector:
-    app: mypod
+    matchLabels:
+      app: mypod
   template:
     metadata:
       labels:
