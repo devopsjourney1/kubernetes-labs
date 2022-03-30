@@ -111,7 +111,7 @@ k annotate pod mypod notes='asdsdgsdgsgd'
 ## Name Spaces
 ``` shell
 k get ns
-k create -f custom-namespace.yaml
+k create -f custom-namespace.yml
 k create -f mypod.yml -n custom-namespace
 k get pod -n custom-namespace
 k get pods --namespace kube-system
